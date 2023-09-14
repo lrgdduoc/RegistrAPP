@@ -1,0 +1,31 @@
+<!-- accesodocente.page.html -->
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <!--<ion-title class="toolbar-title">Acceso Docente</ion-title>-->
+    <ion-title class="start-position title-animation">Acceso Docente</ion-title>
+  </ion-toolbar>              
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-toolbar>
+    <ion-title size="large">¡Bienvenido {{ data }} !</ion-title>
+  </ion-toolbar>
+  
+
+  <!-- Botón para crear QR -->
+  <ion-button expand="full" color="primary" routerLink="/crear-qr">
+    <ion-icon slot="start" name="qr-code-outline"></ion-icon>
+    Crear QR
+  </ion-button>
+
+  <!-- Botón para ver la cantidad de alumnos -->
+  <ion-button expand="full" color="secondary" routerLink="/cantidad-alumnos">
+    <ion-icon slot="start" name="people-outline"></ion-icon>
+    Cantidad de Alumnos
+  </ion-button>
+
+  <!-- Agrega más elementos según tus necesidades -->
+  
+</ion-content>
